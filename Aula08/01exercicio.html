@@ -9,13 +9,10 @@
 </head>
 <body>
     <div>
-        <?php 
-            $ano = $_GET["an"];
-            $idade = 2022 - $ano;
-            echo "Quem nasceu em $ano tem $idade anos! <br/>";
-            $tipo = ($idade >=18 && $idade < 65) ? "OBRIGATÓRIO" : "NÃO É OBRIGATÓRIO";  //Operação ternária
-            echo "E dessa forma seu voto é $tipo!"
-        ?>
+    <form method="get" action="01valor.php">
+        Valor: <input type="number" name="v">
+        <input type="submit" value="Calcular Raiz">
+    </form>
     </div>
 </body>
 </html>
